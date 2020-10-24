@@ -1,5 +1,8 @@
 var r_des = Math.floor(Math.random() * 10) % 3;
 results = [];
+
+caching();
+
 function drawPlot()
 {
   var canv = document.getElementById("canv");

@@ -18,9 +18,18 @@ function drawLine(x1, y1, x2, y2, style, dashed, line_width = '1')
 
 
 
+function caching()
+{
+  if (localStorage['name'] !== undefined)
+  {
+    document.getElementById("input_name").value = localStorage['name'].toLowerCase();
+  }
+}
+
 
 function getUserName()
 {
+  localStorage['name'] = document.getElementById("input_name").value.toLowerCase();
   return document.getElementById("input_name").value.toLowerCase();
 }
 
