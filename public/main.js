@@ -120,6 +120,10 @@ function prechoose(sub)
           res_m = superparse(vals);
         if (sub == 'r')
           res_r = superparse(vals);
+        if (sub == 'c')
+          res_c = superparse(vals);
+        if (sub == 'b')
+          res_b = superparse(vals);
       });
 }
 
@@ -139,6 +143,14 @@ function choose(sub)
   {
     results = res_r;
   }
+  if (sub == 'c')
+  {
+    results = res_c;
+  }
+  if (sub == 'b')
+  {
+    results = res_b;
+  }
   prechoose(sub)
 }
 
@@ -146,6 +158,6 @@ function choose(sub)
 function add()
 {
   const ref = firebase.database().ref().child('u').child(user_name).child(current_sub);
-  results.push(getNewMark())
+  results.push(getNewMark());
   ref.set(results.join(','))
 }
