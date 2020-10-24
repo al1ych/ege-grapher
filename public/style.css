@@ -1,0 +1,22 @@
+button {
+  height: 100px;
+  width: 100px;
+  background-color: #AAE5AA;
+  font: 17px bold;
+  color: 0;
+}
+
+input {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #FE8787;
+  font: 17px bold;
+  color: 0;
+}
+
+table {
+}
+
+th {
+}

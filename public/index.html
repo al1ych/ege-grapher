@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+<canvas id = "canv" style = 'width: 100%; border: 0.7px dashed gray;' width = '1920px' height = '1080px'>
+</canvas>
+
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAQVNd4V05FNZehX-0a153SS_PoAjRgTRQ",
+    authDomain: "ege-grapher.firebaseapp.com",
+    databaseURL: "https://ege-grapher.firebaseio.com",
+    projectId: "ege-grapher",
+    storageBucket: "ege-grapher.appspot.com",
+    messagingSenderId: "160433800533",
+    appId: "1:160433800533:web:a4ef974d9533c432"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<table id='table_layout' style='width:100%'>
+  <tr>
+    <th style='text-align:left'>
+      <input id='input_name' placeholder='name' value='Timur'></input>
+    </th>
+
+    <th style='text-align:center'>
+      <button onclick = "choose('m')">maths</button>
+    </th>
+    <th style='text-align:center'>
+      <button onclick = "choose('i')">computer science</button>
+    </th>
+    <th style='text-align:center'>
+      <button onclick = "choose('r')">russian</button>
+    </th>
+
+    <th style='text-align:right'>
+      <input id='input_add' placeholder='new value' value=''></input>
+      <button onclick = "add()">add</button>
+    </th>
+  </tr>
+</table>
+
+<script src = 'input.txt'>
+</script>
+
+<script src = 'funcs.js'>
+</script>
+
+<script src = 'main.js'>
+</script>
